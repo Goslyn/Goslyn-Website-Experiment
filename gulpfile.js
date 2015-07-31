@@ -14,7 +14,7 @@ var runSequence = require('run-sequence');
 
 // move html to build dir
 gulp.task('html', function(){
-  return gulp.src('**/*.html')
+  return gulp.src('./*.html')
   .pipe(gulp.dest('./build'));
 });
 
@@ -49,7 +49,7 @@ gulp.task('clean', function(cb) {
 // watch files for changes
 gulp.task('watch', function() {
   gulp.watch('stylus/**/*.styl', ['styles']);
-  gulp.watch('**/*.html', ['html']);
+  gulp.watch('*.html', ['html']);
   gulp.watch('build/**/*', browserSync.reload);
 });
 
