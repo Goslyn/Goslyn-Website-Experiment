@@ -14,13 +14,13 @@ var runSequence = require('run-sequence');
 
 // move html to build dir
 gulp.task('html', function(){
-  return gulp.src('./*.html')
+  return gulp.src('./src/**/*.html')
   .pipe(gulp.dest('./build'));
 });
 
 // compile stylus files to css
 gulp.task('styles', function(){
-  return gulp.src('stylus/styles.styl')
+  return gulp.src('./src/stylus/styles.styl')
     .pipe(stylus(
       {
         // change the compress value to 'true' to minify css output
@@ -48,8 +48,8 @@ gulp.task('clean', function(cb) {
 
 // watch files for changes
 gulp.task('watch', function() {
-  gulp.watch('stylus/**/*.styl', ['styles']);
-  gulp.watch('*.html', ['html']);
+  gulp.watch('src/stylus/**/*.styl', ['styles']);
+  gulp.watch('src/**/*.html', ['html']);
   gulp.watch('build/**/*', browserSync.reload);
 });
 
