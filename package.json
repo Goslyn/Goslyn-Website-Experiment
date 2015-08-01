@@ -1,0 +1,30 @@
+{
+  "name": "goslyn-website-experiment",
+  "version": "1.0.0",
+  "description": "test site for ready-set-responsive",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichaelKornblum/Goslyn-Website-Experiment.git"
+  },
+  "author": "Glenn Martin",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/MichaelKornblum/Goslyn-Website-Experiment/issues"
+  },
+  "homepage": "https://github.com/MichaelKornblum/Goslyn-Website-Experiment#readme",
+  "devDependencies": {
+    "browser-sync": "^2.8.2",
+    "del": "^1.2.0",
+    "gulp": "^3.9.0",
+    "gulp-stylus": "^2.0.6",
+    "jeet": "^6.1.2",
+    "nib": "^1.1.0",
+    "run-sequence": "^1.1.2",
+    "rupture": "^0.6.1",
+    "typographic": "^2.9.3"
+  }
+}
